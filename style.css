@@ -4,3 +4,38 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(61, 61, 231);
+}
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        background-color: white;
+    }
+    .container{
+        height: 500px;
+        width: 500px;
+        /* display: flex;
+        flex-wrap: wrap; */
+        margin: 30px auto;
+    }
+    .container::after{
+        display: table;
+        clear: both;
+        content: "";
+    }
+        .square{
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .selected{
+            background-color: cornflowerblue;
+        }
+            
